@@ -7,20 +7,20 @@
     <title>Day 03: Tech Conference Schedule</title>
 </head>
 
-<body>
+<body style="margin: 0; min-height: 100vh; display: flex; justify-content: center; align-items: center;">
     <!-- 
       Semantic Table Structure
       - caption: Acts as the title and is crucial for screen readers
       - thead, tbody, tfoot: Logically sections the data
     -->
-    <table>
-        <caption><strong>Global Tech Summit 2026: Day 3 Schedule</strong></caption>
-        <thead>
-            <tr>
+    <table border="1px solid black" style="border-collapse: collapse;">
+        <caption style="font-weight: bold; font-size: 1.2em; text-align: center; margin-bottom: 10px;">Global Tech Summit 2026: Day 3 Schedule</caption>
+        <thead style="background-color: #f0f0f0;">
+            <tr style="text-align: left;">
                 <!-- scope="col" tells screen readers this header applies to the whole column -->
-                <th scope="col">Time</th>
+                <th scope="col" style="padding: 10px;">Time</th>
                 <th scope="col">Track A: Frontend</th>
-                <th scope="col">Track B: Backend</th>
+                <th scope="col" style="padding: 10px;">Track B: Backend</th>
                 <th scope="col">Track C: DevOps</th>
             </tr>
         </thead>
