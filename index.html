@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 03: Tech Conference Schedule</title>
+</head>
+
+<body>
+    <!-- 
+      Semantic Table Structure
+      - caption: Acts as the title and is crucial for screen readers
+      - thead, tbody, tfoot: Logically sections the data
+    -->
+    <table>
+        <caption><strong>Global Tech Summit 2026: Day 3 Schedule</strong></caption>
+        <thead>
+            <tr>
+                <!-- scope="col" tells screen readers this header applies to the whole column -->
+                <th scope="col">Time</th>
+                <th scope="col">Track A: Frontend</th>
+                <th scope="col">Track B: Backend</th>
+                <th scope="col">Track C: DevOps</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <!-- scope="row" tells screen readers this header applies to the row data -->
+                <th scope="row">09:00 AM - 10:00 AM</th>
+                <!-- colspan="3" merges three columns into one for a shared session -->
+                <td colspan="3">Opening Keynote: The Future of Web Standards</td>
+            </tr>
+            <tr>
+                <th scope="row">10:15 AM - 11:15 AM</th>
+                <td>Advanced CSS Grid Layouts</td>
+                <!-- rowspan="2" merges this cell vertically across two time slots -->
+                <td rowspan="2">Deep Dive: Microservices Architecture<br><small>(2-Hour Workshop)</small></td>
+                <td>Kubernetes for Beginners</td>
+            </tr>
+            <tr>
+                <th scope="row">11:30 AM - 12:30 PM</th>
+                <td>State Management in React 19</td>
+                <!-- Backend cell is omitted here because of the rowspan above -->
+                <td>Automating CI/CD Pipelines</td>
+            </tr>
+            <tr>
+                <th scope="row">12:30 PM - 01:30 PM</th>
+                <td colspan="3">Networking Lunch Break</td>
+            </tr>
+            <tr>
+                <th scope="row">01:30 PM - 02:30 PM</th>
+                <td>WebAssembly in Production</td>
+                <td>GraphQL API Optimization</td>
+                <td>Infrastructure as Code (Terraform)</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">End of Day</th>
+                <td colspan="3">Join us in the Main Hall for the closing remarks and prize giveaways.</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
